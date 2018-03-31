@@ -3,7 +3,7 @@ import { inject, observer } from 'mobx-react';
 import { Router,Route, Switch } from 'react-router';
 import Login from "./components/Login"
 import Loading from "./components/Loading"
-import Registration from "./components/Registeration"
+import Registration from "./components/Registration"
 import Home from "./components/Home"
 import Past from "./components/Past"
 import Future from "./components/Future"
@@ -19,9 +19,7 @@ export default class App extends Component {
                 <Route exact path="/" component={Loading} />
                 <Route path="/login" component={Login} />
                 <Route path="/register" component={Registration} />
-                <Route path="/home" component={Home} />
-                <Route path="/future" component={Past} />
-                <Route path="/past" component={Future} />
+                <Route path="/home/today" component={Home} />
             </Switch>
         );
     }

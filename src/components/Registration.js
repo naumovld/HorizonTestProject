@@ -13,6 +13,15 @@ class Registeration extends Component {
             <div>
               <div>
                   <p>regaisa blya</p>
+                  <div>
+                      <input placeholder="mail" id="mail"  />
+                  </div>
+                  <div>
+                      <input placeholder="password" id="password"  />
+                  </div>
+                  <div>
+                      <input placeholder="repeat password" id="repeatPassword"  />
+                  </div>
                   <button onClick={this.HandleRegister}> registration</button>
               </div>
             </div>

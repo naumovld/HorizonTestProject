@@ -1,13 +1,23 @@
 import React, { Component } from 'react';
+import {inject, observer} from "mobx-react";
 
+@inject('routing')
+@observer
 class Login extends Component {
-  render() {
-    return (
-      <div>
-        <h1>hello</h1>
-      </div>
-    );
+  RegisterForm = () =>{
+    this.props.routing.push('/register')
   }
+    render() {
+    console.log("i am here")
+        return (
+            <div>
+              <div>
+                  <button>Sign Up</button>
+                  <button onClick={this.RegisterForm}>registration</button>
+              </div>
+            </div>
+        );
+    }
 }
 
 export default Login;
